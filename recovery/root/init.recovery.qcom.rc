@@ -50,3 +50,9 @@ service linkblobs /system/bin/linkblobs.sh
     disabled
     oneshot
     seclabel u:r:recovery:s0
+
+# Fix flashlight on orangefox
+on property:ro.orangefox.boot=1
+    mkdir /tmp/flashlight
+    write /tmp/flashlight/max_brightness "1"
+    symlink /sys/devices/virtual/camera/flash/rear_flash /tmp/flashlight/brightness

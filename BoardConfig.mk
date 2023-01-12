@@ -78,7 +78,7 @@ BOARD_AVB_ENABLE := false
 
 # Samsung TS drivers (a52sxq)
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-TW_LOAD_VENDOR_MODULES := "sec_cmd.ko sec_common_fn.ko sec_secure_touch.ko sec_tclm_v2.ko sec_tsp_dumpkey.ko sec_tsp_log.ko stm_ts.ko"
+TW_LOAD_VENDOR_MODULES := "sec_cmd.ko sec_common_fn.ko sec_secure_touch.ko sec_tclm_v2.ko sec_tsp_dumpkey.ko sec_tsp_log.ko camera.ko stm_ts.ko"
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
