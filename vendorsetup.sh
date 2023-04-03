@@ -30,3 +30,4 @@ export FOX_BUILD_TYPE="Stable"
 export FOX_VERSION="R11.1_0"
 export OF_FL_PATH1="/tmp/flashlight" # See /init.recovery.qcom.rc for more information
 export OF_FL_PATH2=""
+export FOX_USE_SPECIFIC_MAGISK_ZIP=~/android/ofox/device/samsung/a52sxq/Magisk-Delta-25206.apk
